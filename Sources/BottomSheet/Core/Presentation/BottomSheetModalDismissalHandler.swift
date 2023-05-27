@@ -8,6 +8,7 @@
 
 public protocol BottomSheetModalDismissalHandler {
     var canBeDismissed: Bool { get }
+    var canBePanDismissed: Bool { get }
 
     func performDismissal(animated: Bool)
 }

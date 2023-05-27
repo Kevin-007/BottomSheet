@@ -171,6 +171,7 @@ public final class BottomSheetPresentationController: UIPresentationController {
 
     @objc
     private func handlePanGesture(_ panGesture: UIPanGestureRecognizer) {
+        guard dismissalHandler.canBePanDismissed else { return }
         switch panGesture.state {
         case .began:
             processPanGestureBegan(panGesture)

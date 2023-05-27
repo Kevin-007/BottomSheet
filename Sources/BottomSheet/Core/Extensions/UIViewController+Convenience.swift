@@ -62,6 +62,7 @@ public final class DefaultBottomSheetModalDismissalHandler: BottomSheetModalDism
     // MARK: - BottomSheetModalDismissalHandler
 
     public let canBeDismissed = true
+    public let canBePanDismissed = false
 
     public func performDismissal(animated: Bool) {
         presentingViewController?.presentedViewController?.dismiss(animated: animated, completion: dismissCompletion)
